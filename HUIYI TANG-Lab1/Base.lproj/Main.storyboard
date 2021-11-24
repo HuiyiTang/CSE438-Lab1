@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HUIYI_TANG_Lab1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Shopping Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kh-SQ-rRY">
+                                <rect key="frame" x="40" y="161" width="310" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Original Price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zsl-A5-nbv">
+                                <rect key="frame" x="62" y="276" width="266" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="priceChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="Y8H-jo-xws"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Sales Tax %" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fFr-J1-h7h">
+                                <rect key="frame" x="62" y="455" width="266" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="taxChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="5Vq-BP-36k"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Final Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ab6-5z-BzY">
+                                <rect key="frame" x="138" y="542" width="114" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24" id="KID-Hj-PAY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-EN-Ky3">
+                                <rect key="frame" x="62" y="589" width="266" height="31"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Original Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilQ-s0-Rfc">
+                                <rect key="frame" x="62" y="244" width="117" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sales Tax %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsN-pd-NfA">
+                                <rect key="frame" x="62" y="423" width="105" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Discount %" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZsG-pA-g2B">
+                                <rect key="frame" x="62" y="368" width="266" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="discountChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="CoX-hd-E8C"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discount %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lG0-WU-dsZ">
+                                <rect key="frame" x="62" y="336" width="101" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Shopping_Cart" translatesAutoresizingMaskIntoConstraints="NO" id="0Zv-bJ-H1v">
+                                <rect key="frame" x="-10" y="603" width="384" height="255"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Zsl-A5-nbv" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZsG-pA-g2B" secondAttribute="trailing" id="0RO-em-UYp"/>
+                            <constraint firstItem="ZsG-pA-g2B" firstAttribute="top" secondItem="lG0-WU-dsZ" secondAttribute="bottom" constant="8" id="0oT-eR-iBM"/>
+                            <constraint firstItem="Ab6-5z-BzY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="138" id="1fu-No-XGI"/>
+                            <constraint firstItem="0Zv-bJ-H1v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-26" id="27c-Q3-sv8"/>
+                            <constraint firstItem="fFr-J1-h7h" firstAttribute="top" secondItem="MsN-pd-NfA" secondAttribute="bottom" constant="8" id="46e-64-YRq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MsN-pd-NfA" secondAttribute="trailing" constant="223" id="5Oc-EM-k5N"/>
+                            <constraint firstItem="ZsG-pA-g2B" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="fFr-J1-h7h" secondAttribute="trailing" id="6JN-7S-SVN"/>
+                            <constraint firstItem="ilQ-s0-Rfc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="8df-oO-2GC"/>
+                            <constraint firstItem="Zsl-A5-nbv" firstAttribute="top" secondItem="ilQ-s0-Rfc" secondAttribute="bottom" constant="8" id="AYw-Vu-C9P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gQq-EN-Ky3" secondAttribute="bottom" constant="190" id="E5O-yV-vBt"/>
+                            <constraint firstItem="ilQ-s0-Rfc" firstAttribute="top" secondItem="9kh-SQ-rRY" secondAttribute="bottom" constant="47" id="EDP-cc-pUp"/>
+                            <constraint firstItem="9kh-SQ-rRY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GQd-Q0-v0g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFr-J1-h7h" secondAttribute="trailing" constant="62" id="H8P-Xx-65Q"/>
+                            <constraint firstItem="Zsl-A5-nbv" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="lG0-WU-dsZ" secondAttribute="leading" id="LIk-JB-35y"/>
+                            <constraint firstItem="Ab6-5z-BzY" firstAttribute="top" secondItem="fFr-J1-h7h" secondAttribute="bottom" constant="53" id="MfT-Up-jCr"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="0Zv-bJ-H1v" secondAttribute="bottom" constant="-48" id="Nsa-hl-XjJ"/>
+                            <constraint firstItem="9kh-SQ-rRY" firstAttribute="centerX" secondItem="Zsl-A5-nbv" secondAttribute="centerX" id="OJ2-Tc-ftD"/>
+                            <constraint firstItem="ZsG-pA-g2B" firstAttribute="leading" secondItem="MsN-pd-NfA" secondAttribute="leading" id="PCQ-Hj-mBw"/>
+                            <constraint firstItem="fFr-J1-h7h" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="gQq-EN-Ky3" secondAttribute="leading" id="PIN-CI-jjq"/>
+                            <constraint firstItem="fFr-J1-h7h" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="Qe4-dS-LB8"/>
+                            <constraint firstItem="0Zv-bJ-H1v" firstAttribute="top" secondItem="Ab6-5z-BzY" secondAttribute="bottom" constant="37" id="QqY-VA-eY1"/>
+                            <constraint firstItem="lG0-WU-dsZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ZsG-pA-g2B" secondAttribute="leading" id="RHG-c2-pPb"/>
+                            <constraint firstItem="fFr-J1-h7h" firstAttribute="top" secondItem="MsN-pd-NfA" secondAttribute="bottom" constant="8" symbolic="YES" id="RJo-2p-uQC"/>
+                            <constraint firstItem="MsN-pd-NfA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="SWk-xG-u3W"/>
+                            <constraint firstItem="fFr-J1-h7h" firstAttribute="centerX" secondItem="Ab6-5z-BzY" secondAttribute="centerX" id="TJJ-SL-hMi"/>
+                            <constraint firstItem="lG0-WU-dsZ" firstAttribute="top" secondItem="Zsl-A5-nbv" secondAttribute="bottom" constant="26" id="WJs-mb-Kby"/>
+                            <constraint firstItem="fFr-J1-h7h" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="411" id="WsI-eT-opE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lG0-WU-dsZ" secondAttribute="trailing" constant="227" id="dfz-5t-FDb"/>
+                            <constraint firstItem="MsN-pd-NfA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="379" id="f4X-VA-y3C"/>
+                            <constraint firstItem="MsN-pd-NfA" firstAttribute="top" secondItem="ZsG-pA-g2B" secondAttribute="bottom" constant="21" id="huI-aS-Mnw"/>
+                            <constraint firstItem="Ab6-5z-BzY" firstAttribute="centerX" secondItem="gQq-EN-Ky3" secondAttribute="centerX" id="nXw-gr-Ngw"/>
+                            <constraint firstItem="0Zv-bJ-H1v" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="oJi-y7-Mdf"/>
+                            <constraint firstItem="gQq-EN-Ky3" firstAttribute="top" secondItem="Ab6-5z-BzY" secondAttribute="bottom" constant="23" id="pLl-9t-tl4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fFr-J1-h7h" secondAttribute="bottom" constant="321" id="qET-uQ-qJ6"/>
+                            <constraint firstItem="MsN-pd-NfA" firstAttribute="leading" secondItem="fFr-J1-h7h" secondAttribute="leading" id="qgu-1T-muY"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ilQ-s0-Rfc" secondAttribute="trailing" constant="211" id="tbB-Im-IAn"/>
+                            <constraint firstItem="ilQ-s0-Rfc" firstAttribute="leading" secondItem="Zsl-A5-nbv" secondAttribute="leading" id="uE7-wl-Ogn"/>
+                            <constraint firstItem="9kh-SQ-rRY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="117" id="zWW-ai-D5b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="discountInput" destination="ZsG-pA-g2B" id="bZ9-0R-pJh"/>
+                        <outlet property="finalPrice" destination="gQq-EN-Ky3" id="r0X-JD-dkr"/>
+                        <outlet property="originalInput" destination="Zsl-A5-nbv" id="fV7-hu-JNc"/>
+                        <outlet property="taxInput" destination="fFr-J1-h7h" id="QeY-cf-jvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-10.769230769230768" y="112.32227488151658"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Shopping_Cart" width="750" height="750"/>
+    </resources>
+</document>
